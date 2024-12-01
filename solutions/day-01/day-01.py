@@ -15,7 +15,7 @@ class PairedLists:
         return sum([abs(y - x) for x, y in zip(self.list_a, self.list_b)])
     
     def weightedSum(self):
-        return sum([x * len([y for y in self.list_b if y == x]) for x in self.list_a])
+        return sum([x * self.list_b.count(x) for x in self.list_a])
 
 def part_1(pairedLists):
     print('Part 1:', pairedLists.cumAbsDiff())
