@@ -8,9 +8,9 @@
 
 [Day 3 (Python)](/solutions/day-03)
 
-<!--[Day 4 (Python)](/solutions/day-04)
+[Day 4 (Python)](/solutions/day-04)
 
-[Day 5 (Python)](/solutions/day-05)
+<!--[Day 5 (Python)](/solutions/day-05)
 
 [Day 6 (Python)](/solutions/day-06)
 
