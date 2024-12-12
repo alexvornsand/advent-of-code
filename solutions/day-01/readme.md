@@ -105,7 +105,7 @@ def part_2(pairedLists):
     print('Part 2:', pairedLists.weightedSum())
 
 def main():
-    lists = [[int(x) for x in re.search('(\d+)\s+(\d+)', line).groups()] for line in open('input.txt', 'r').read().splitlines()]
+    lists = [[int(x) for x in re.search('(\d+)\s+(\d+)', line).groups()] for line in open(file, 'r').read().splitlines()]
     pairedLists = PairedLists(lists)
     part_1(pairedLists)
     part_2(pairedLists)
