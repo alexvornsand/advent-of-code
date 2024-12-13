@@ -4,7 +4,7 @@ repos:
       hooks:
           - id: aoc-tiles
                 - --auto-add-tiles-to-git=add
-                # - --contrast-improvement-type=dark
+                - --contrast-improvement-type=dark
                 - --create-all-days=True
                 - --count-as-solved-when=on_leaderboard
                 - --overwrite-year=2024
