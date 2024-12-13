@@ -1,7 +1,5 @@
 # advent-of-code-2024
  
- A place for me to attempt 2024's [Advent of Code](https://adventofcode.com/2024/) challenges
-
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
   Advent of Code - 389/476 ⭐
