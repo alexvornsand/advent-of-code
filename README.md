@@ -3,6 +3,7 @@
  A place for me to attempt 2024's [Advent of Code](https://adventofcode.com/2024/) challenges
 
 <!-- AOC TILES BEGIN -->
+
 <!-- AOC TILES END -->
 
 <!--[Day 1 (Python)](/solutions/day-01)
