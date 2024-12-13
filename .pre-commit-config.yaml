@@ -7,3 +7,4 @@ repos:
                 - --contrast-improvement-type=dark
                 - --create-all-days=True
                 - --count-as-solved-when=on_leaderboard
+                - --overwrite-year=2024
