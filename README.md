@@ -2,7 +2,10 @@
  
  A place for me to attempt 2024's [Advent of Code](https://adventofcode.com/2024/) challenges
 
-[Day 1 (Python)](/solutions/day-01)
+<!-- AOC TILES BEGIN -->
+<!-- AOC TILES END -->
+
+<!--[Day 1 (Python)](/solutions/day-01)
 
 [Day 2 (Python)](/solutions/day-02)
 
