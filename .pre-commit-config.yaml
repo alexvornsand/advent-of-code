@@ -5,7 +5,7 @@ repos:
           - id: aoc-tiles
             args:
                 - --auto-add-tiles-to-git=amend
-                # - --contrast-improvement-type=dark
-                # - --create-all-days=True
-                # - --count-as-solved-when=on_leaderboard
-                # - --overwrite-year=2024
+                - --contrast-improvement-type=dark
+                - --create-all-days=True
+                - --count-as-solved-when=on_leaderboard
+                - --overwrite-year=2024
