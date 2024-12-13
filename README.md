@@ -26,9 +26,9 @@
 
 [Day 12 (Python)](/solutions/day-12)
 
-<!--[Day 13 (Python)](/solutions/day-13)
+[Day 13 (Python)](/solutions/day-13)
 
-[Day 14 (Python)](/solutions/day-14)
+<!--[Day 14 (Python)](/solutions/day-14)
 
 [Day 15 (Python)](/solutions/day-15)
 
