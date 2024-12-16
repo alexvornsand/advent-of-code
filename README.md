@@ -2,7 +2,7 @@
  
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 393/480 ⭐
+  Advent of Code - 393/482 ⭐
 </h1>
 <h1 align="center">
   2024 - 30 ⭐ - Python
