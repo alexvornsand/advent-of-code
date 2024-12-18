@@ -1,5 +1,5 @@
 # advent of code 2024
-# day 4
+# day 04
 
 import itertools
 
