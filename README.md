@@ -58,7 +58,7 @@
 <a href="solutions/2024/day-17/day-17.py">
   <img src=".aoc_tiles/tiles/2024/17.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2024/day-18/day-18.py">
   <img src=".aoc_tiles/tiles/2024/18.png" width="161px">
 </a>
 <a href="None">
