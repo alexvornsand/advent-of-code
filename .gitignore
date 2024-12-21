@@ -3,3 +3,4 @@
 .aoc_tiles/*
 !.aoc_tiles/tiles/
 .DS_Store
+*.notes
