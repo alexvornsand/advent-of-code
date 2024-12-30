@@ -1,5 +1,5 @@
 # advent-of-code-2024
- 
+
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
   Advent of Code - 403/492 ⭐
