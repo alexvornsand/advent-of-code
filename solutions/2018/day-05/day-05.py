@@ -1,5 +1,5 @@
 # advent of code 2018
-# day 5
+# day 05
 
 from string import ascii_lowercase as alc
 
