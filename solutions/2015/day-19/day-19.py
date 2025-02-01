@@ -2,9 +2,8 @@
 # day 19
 
 # part 1
-import re
 
-input = open('day-19.txt', 'r').read()
+input = open('solutions/2015/day-19/input.txt', 'r').read()
 
 def doChemistry(input, partTwo = False):
     reactionDict = {}

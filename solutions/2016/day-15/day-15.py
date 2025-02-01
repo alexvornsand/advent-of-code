@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2016/day-15/input.txt'
 
 class Sculpture:
     def __init__(self, disks):

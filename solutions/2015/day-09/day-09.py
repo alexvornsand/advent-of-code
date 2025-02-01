@@ -4,7 +4,7 @@
 # part 1
 import itertools
 
-input = open('day-09.txt', 'r').read()
+input = open('solutions/2015/day-09/input.txt', 'r').read()
 
 def getTravelDistance(input, partTwo = False):
     distances = {}

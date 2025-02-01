@@ -5,7 +5,7 @@
 import sys
 import time
 
-input = [9, 12, 1, 4, 17, 0, 18]
+input = [int(x) for x in open('input.txt', 'r').read().split()]
 
 def play(end):
     lastPlayed = {}

@@ -3,7 +3,7 @@
 
 from hashlib import md5
 
-id = 'cxdnnyjw'
+file = 'solutions/2016/day-05/input.txt'
 
 class Decryption:
     def __init__(self, id):
@@ -15,7 +15,7 @@ class Decryption:
 
     def findHash(self):
         while True:
-            hash = md5(bytes(id + str(self.i), 'utf-8')).hexdigest()
+            hash = md5(bytes(self.id + str(self.i), 'utf-8')).hexdigest()
             self.i += 1
             if hash[:5] == '00000':
                 return hash
@@ -39,6 +39,7 @@ def part_2(decryption):
     print('Part 2:', decryption.complex_password)
 
 def main():
+    id = open(file, 'r').read()
     decryption = Decryption(id)
     decryption.findPasswords()
     part_1(decryption)

@@ -4,7 +4,7 @@
 from functools import cache
 from collections import defaultdict
 
-file = 'input.txt'
+file = 'solutions/2016/day-24/input.txt'
 
 class Maze:
     def __init__(self, grid):

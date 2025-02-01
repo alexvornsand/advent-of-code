@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2016/day-10/input.txt'
 
 class FactoryBots:
     def __init__(self, instructions):

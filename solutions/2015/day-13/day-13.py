@@ -4,7 +4,7 @@
 # part 1
 import itertools
 
-input = open('day-13.txt', 'r').read()
+input = open('solutions/2015/day-13/input.txt', 'r').read()
 
 def arrangeSeats(input, partTwo = False):
     happinessDict = {}

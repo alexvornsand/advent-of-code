@@ -1,7 +1,7 @@
 # advent of code 2016
 # day 1
 
-file = 'input.txt'
+file = 'solutions/2016/day-01/input.txt'
 
 class CityMap:
     def __init__(self, instructions):

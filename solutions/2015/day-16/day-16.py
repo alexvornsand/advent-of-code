@@ -2,7 +2,7 @@
 # day 16
 
 # part 1
-input = open('day-16.txt', 'r').read()
+input = open('solutions/2015/day-16/input.txt', 'r').read()
 
 def identifyAuntSue(input, partTwo = False):
     auntSues = {}

@@ -2,7 +2,7 @@
 # day 15
 
 # part 1
-input = open('day-15.txt', 'r').read()
+input = open('solutions/2015/day-15/input.txt', 'r').read()
 
 def maximizeCookie(input, partTwo = False):
     ingredientsDict = {}

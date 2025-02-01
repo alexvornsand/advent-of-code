@@ -2,7 +2,7 @@
 # day 14
 
 # part 1
-input = open('day-14.txt', 'r').read()
+input = open('solutions/2015/day-14/input.txt', 'r').read()
 
 def reindeerRace(input, partTwo = False):
     reindeerStamina = {}

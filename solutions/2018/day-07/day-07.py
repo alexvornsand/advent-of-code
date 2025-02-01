@@ -4,7 +4,7 @@
 import re
 import networkx as nx
 
-file = 'input.txt'
+file = 'solutions/2018/day-07/input.txt'
 
 class Manual:
     def __init__(self, instructions):

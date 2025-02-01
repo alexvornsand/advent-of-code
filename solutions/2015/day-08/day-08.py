@@ -2,7 +2,7 @@
 # day 8
 
 # part 1
-input = open('day-08.txt', 'r').read()
+input = open('solutions/2015/day-08/input.txt', 'r').read()
 
 def countDifference(input, partTwo = False):
     if partTwo == False:

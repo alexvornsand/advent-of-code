@@ -1,7 +1,7 @@
 # advent of code 2018
-# day 2
+# day 02
 
-file = 'input.txt'
+file = 'solutions/2018/day-02/input.txt'
 
 class Warehouse:
     def __init__(self, boxes):

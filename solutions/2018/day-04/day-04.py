@@ -1,10 +1,10 @@
 # advent of code 2018
-# day 4
+# day 04
 
 import re
 from datetime import datetime
 
-file = 'input.txt'
+file = 'solutions/2018/day-04/input.txt'
 
 class GuardLog:
     def __init__(self, log):
@@ -14,9 +14,9 @@ class GuardLog:
         
     def strategy_1(self):
         for line in self.log:
-            date_time, event = re.search('\[(.*)\]\s(.*)', line).groups()
+            date_time, event = re.search(r"\[(.*)\]\s(.*)", line).groups()
             if '#' in event:
-                guard = int(re.search('\#(\d*)', event).groups()[0])
+                guard = int(re.search(r"\#(\d*)", event).groups()[0])
                 if guard not in self.guards_minutes:
                     self.guards_minutes[guard] = {}
                     self.guards_total[guard] = 0

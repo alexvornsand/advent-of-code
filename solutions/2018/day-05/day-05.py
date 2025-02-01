@@ -3,7 +3,7 @@
 
 from string import ascii_lowercase as alc
 
-file = 'input.txt'
+file = 'solutions/2018/day-05/input.txt'
 
 class Polymer:
     def __init__(self, string):

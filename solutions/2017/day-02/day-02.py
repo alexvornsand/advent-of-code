@@ -1,7 +1,7 @@
 # advent of code 2017
-# day 2
+# day 20
 
-file = 'input.txt'
+file = 'solutions/2017/day-02/input.txt'
 
 class Spreadsheet:
     def __init__(self, rows):

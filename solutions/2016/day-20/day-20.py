@@ -1,7 +1,7 @@
 # advent of code 2016
 # day 20
 
-file = 'input.txt'
+file = 'solutions/2016/day-20/input.txt'
 
 class Firewall:
     def __init__(self, ranges):

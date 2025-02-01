@@ -1,7 +1,7 @@
 # advent of code 2017
-# day 3
+# day 03
 
-file = 'input.txt'
+file = 'solutions/2017/day-03/input.txt'
 
 class Spiral:
     def __init__(self, terminus):

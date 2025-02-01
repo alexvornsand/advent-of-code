@@ -1,7 +1,7 @@
 # advent of code 2015
 # day 3
 
-file = 'input.txt'
+file = 'solutions/2015/day-03/input.txt'
 
 class Path:
     def __init__(self):
@@ -43,14 +43,12 @@ class Path:
 
 def part_1(directions):
     path = Path()
-    print(path.locations_visited)
     for x in directions:
         path.santa_move(x)
     print('Part 1:', path.children_visited, sep='\n')
 
 def part_2(directions):
     path = Path()
-    print(path.locations_visited)
     i = 0
     for x in directions:
         if i % 2 == 0:

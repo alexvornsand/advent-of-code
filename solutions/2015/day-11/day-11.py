@@ -2,7 +2,7 @@
 # day 11
 
 # part 1
-input = open('day-11.txt', 'r').read()
+input = open('solutions/2015/day-11/input.txt', 'r').read()
 
 def findNextPassword(input, partTwo = False):
     def numberToBase(n, b):

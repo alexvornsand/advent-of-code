@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2016/day-03/input.txt'
 
 class TriangleSides:
     def __init__(self, triangles):

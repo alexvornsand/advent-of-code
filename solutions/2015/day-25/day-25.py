@@ -4,10 +4,10 @@
 # part 1
 import re
 
-prompt = open('input.txt', 'r').read()[:-1]
+prompt = open('solutions/2015/day-25/input.txt', 'r').read()
 
 def getCode(prompt):
-    r, c = [int(x) for x in list(re.search('(\d+), column (\d+)', prompt).groups())]
+    r, c = [int(x) for x in re.findall(r"\d+", prompt)]
     order = r + c - 1
     orderIndex = (order) * (order - 1) / 2 + 1
     targetIndex = orderIndex + c - 1

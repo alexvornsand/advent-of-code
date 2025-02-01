@@ -1,142 +1,51 @@
 # advent of code 2015
-# day 7
+# day 07
 
-# part 1
-input = open('day-07.txt', 'r').read()
+from functools import cache
 
-def findAValue(input, partTwo = False):
-    assignments = input.split('\n')
-    map = {}
-    while(len(assignments) > 0):
-        for assgn in assignments:
-            if 'AND' in assgn:
-                if assgn.split(' ')[0].isnumeric():
-                    if assgn.split(' ')[2].isnumeric():
-                        map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) & int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[2] in map.keys():
-                        map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) & map[assgn.split(' ')[2]]
-                        assignments.pop(assignments.index(assgn))
-                elif assgn.split(' ')[0] in map.keys():
-                    if assgn.split(' ')[2].isnumeric():
-                        map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] & int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[2] in map.keys():
-                        map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] & map[assgn.split(' ')[2]]
-                        assignments.pop(assignments.index(assgn))
-            elif 'OR' in assgn:
-                if assgn.split(' ')[0].isnumeric():
-                    if assgn.split(' ')[2].isnumeric():
-                        map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) | int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[2] in map.keys():
-                        map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) | map[assgn.split(' ')[2]]
-                        assignments.pop(assignments.index(assgn))
-                elif assgn.split(' ')[0] in map.keys():
-                    if assgn.split(' ')[2].isnumeric():
-                        map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] | int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[2] in map.keys():
-                        map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] | map[assgn.split(' ')[2]]
-                        assignments.pop(assignments.index(assgn))
-            elif 'LSHIFT' in assgn:
-                if assgn.split(' ')[0].isnumeric():
-                    map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) << int(assgn.split(' ')[2])
-                    assignments.pop(assignments.index(assgn))
-                elif assgn.split(' ')[0] in map.keys():
-                    map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] << int(assgn.split(' ')[2])
-                    assignments.pop(assignments.index(assgn))
-            elif 'RSHIFT' in assgn:
-                if assgn.split(' ')[0].isnumeric():
-                    map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) >> int(assgn.split(' ')[2])
-                    assignments.pop(assignments.index(assgn))
-                elif assgn.split(' ')[0] in map.keys():
-                    map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] >> int(assgn.split(' ')[2])
-                    assignments.pop(assignments.index(assgn))
-            elif 'NOT' in assgn:
-                if assgn.split(' ')[1].isnumeric():
-                    map[assgn.split(' ')[3]] = ~int(assgn.split(' ')[1])
-                    assignments.pop(assignments.index(assgn))
-                elif assgn.split(' ')[1] in map.keys():
-                    map[assgn.split(' ')[3]] = ~map[assgn.split(' ')[1]]
-                    assignments.pop(assignments.index(assgn))
-            else:
-                if assgn.split(' ')[0].isnumeric():
-                    map[assgn.split(' ')[2]] = int(assgn.split(' ')[0])
-                    assignments.pop(assignments.index(assgn))
-                elif assgn.split(' ')[0] in map.keys():
-                    map[assgn.split(' ')[2]] = map[assgn.split(' ')[0]]
-                    assignments.pop(assignments.index(assgn))
-    if partTwo == True:
-        bVal = map['a']
-        map = {'b': bVal}
-        assignments = input.split('\n')
-        while(len(assignments) > 0):
-            for assgn in assignments:
-                if assgn.split(' ')[-1] == 'b':
-                    assignments.pop(assignments.index(assgn))
-                elif 'AND' in assgn:
-                    if assgn.split(' ')[0].isnumeric():
-                        if assgn.split(' ')[2].isnumeric():
-                            map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) & int(assgn.split(' ')[2])
-                            assignments.pop(assignments.index(assgn))
-                        elif assgn.split(' ')[2] in map.keys():
-                            map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) & map[assgn.split(' ')[2]]
-                            assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[0] in map.keys():
-                        if assgn.split(' ')[2].isnumeric():
-                            map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] & int(assgn.split(' ')[2])
-                            assignments.pop(assignments.index(assgn))
-                        elif assgn.split(' ')[2] in map.keys():
-                            map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] & map[assgn.split(' ')[2]]
-                            assignments.pop(assignments.index(assgn))
-                elif 'OR' in assgn:
-                    if assgn.split(' ')[0].isnumeric():
-                        if assgn.split(' ')[2].isnumeric():
-                            map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) | int(assgn.split(' ')[2])
-                            assignments.pop(assignments.index(assgn))
-                        elif assgn.split(' ')[2] in map.keys():
-                            map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) | map[assgn.split(' ')[2]]
-                            assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[0] in map.keys():
-                        if assgn.split(' ')[2].isnumeric():
-                            map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] | int(assgn.split(' ')[2])
-                            assignments.pop(assignments.index(assgn))
-                        elif assgn.split(' ')[2] in map.keys():
-                            map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] | map[assgn.split(' ')[2]]
-                            assignments.pop(assignments.index(assgn))
-                elif 'LSHIFT' in assgn:
-                    if assgn.split(' ')[0].isnumeric():
-                        map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) << int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[0] in map.keys():
-                        map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] << int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                elif 'RSHIFT' in assgn:
-                    if assgn.split(' ')[0].isnumeric():
-                        map[assgn.split(' ')[4]] = int(assgn.split(' ')[0]) >> int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[0] in map.keys():
-                        map[assgn.split(' ')[4]] = map[assgn.split(' ')[0]] >> int(assgn.split(' ')[2])
-                        assignments.pop(assignments.index(assgn))
-                elif 'NOT' in assgn:
-                    if assgn.split(' ')[1].isnumeric():
-                        map[assgn.split(' ')[3]] = ~int(assgn.split(' ')[1])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[1] in map.keys():
-                        map[assgn.split(' ')[3]] = ~map[assgn.split(' ')[1]]
-                        assignments.pop(assignments.index(assgn))
-                else:
-                    if assgn.split(' ')[0].isnumeric():
-                        map[assgn.split(' ')[2]] = int(assgn.split(' ')[0])
-                        assignments.pop(assignments.index(assgn))
-                    elif assgn.split(' ')[0] in map.keys():
-                        map[assgn.split(' ')[2]] = map[assgn.split(' ')[0]]
-                        assignments.pop(assignments.index(assgn))
-    return(map['a'])
+file = 'solutions/2015/day-07/input.txt'
 
-findAValue(input)
+class CircuitBoard:
+    def __init__(self, instructions):
+        self.nodes = {node: definition for definition, node in [instruction.split(' -> ') for instruction in instructions]}
 
-# part 2
-findAValue(input, partTwo = True)
+    @cache
+    def getCircuitValue(self, node, log=False, depth=0):
+        indent = '\t' * depth
+        if log:
+            print(indent, 'assessing ', node, sep='')
+        if node.isdigit():
+            if log:
+                print(indent, '\t', node, ' is an integer; returning ', node, sep='')
+            return int(node)
+        elif node in ['OR', 'AND', 'RSHIFT', 'LSHIFT', 'NOT']:
+            if log:
+                print(indent, '\t', node, ' is an operator; returning ', ['|', '&', '>>', '<<', '~'][['OR', 'AND', 'RSHIFT', 'LSHIFT', 'NOT'].index(node)], sep='')
+            return ['|', '&', '>>', '<<', '~'][['OR', 'AND', 'RSHIFT', 'LSHIFT', 'NOT'].index(node)]
+        elif self.nodes[node].isdigit():
+            if log:
+                print(indent, '\t', node, ' is an populated key; returning ', self.nodes[node], sep='')
+            return self.getCircuitValue(self.nodes[node], log=log, depth=depth+1)
+        else:
+            if log:
+                print(indent, '\t', node, ' is not a populated key(', self.nodes[node], '); iterating', sep='')
+            args = self.nodes[node].split(' ')
+            return eval(''.join([str(self.getCircuitValue(arg, log=log, depth=depth+1)) for arg in args]))
+        
+def part_1(circuitBoard):
+    a = circuitBoard.getCircuitValue('a')
+    print('Part 1:', a)
+    return a
 
+def part_2(adjustedCircuitBoard):
+    print('Part 2:', adjustedCircuitBoard.getCircuitValue('a'))
+
+def main():
+    instructions = open(file, 'r').read().splitlines()
+    circuitBoard = CircuitBoard(instructions)
+    a = part_1(circuitBoard)
+    adjustedCircuitBoard = CircuitBoard(instructions + [str(a) + ' -> b'])
+    part_2(adjustedCircuitBoard)
+
+if __name__ == '__main__':
+    main()

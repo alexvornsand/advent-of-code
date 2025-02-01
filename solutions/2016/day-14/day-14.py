@@ -4,7 +4,7 @@
 from hashlib import md5
 import re
 
-salt = 'ihaygndm'
+file = 'solutions/2016/day-14/input.txt'
 
 class Decrypter:
     def __init__(self, salt):
@@ -39,6 +39,7 @@ def part_2(decrypter):
 
 
 def main():
+    salt = open(file, 'r').read()
     decrypter = Decrypter(salt)
     part_1(decrypter)
     part_2(decrypter)

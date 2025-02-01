@@ -4,7 +4,7 @@
 import uuid
 from functools import cache
 
-file = 'input.txt'
+file = 'solutions/2018/day-08/input.txt'
 
 class Tree:
     def __init__(self, license):

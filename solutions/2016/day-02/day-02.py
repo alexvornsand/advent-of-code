@@ -1,7 +1,7 @@
 # advent of code 2016
 # day 2
 
-file = 'input.txt'
+file = 'solutions/2016/day-02/input.txt'
 
 class Password():
     def __init__(self, instructions):

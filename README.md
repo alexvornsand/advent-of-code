@@ -1,7 +1,7 @@
 # advent-of-code-2024
 <!-- AOC TILES BEGIN -->
 <h1 align="center">
-  Advent of Code - 419/500 ⭐
+  Advent of Code - 440/500 ⭐
 </h1>
 <h1 align="center">
   2024 - 50 ⭐ - Python
@@ -472,7 +472,7 @@
   <img src=".aoc_tiles/tiles/2019/25.png" width="161px">
 </a>
 <h1 align="center">
-  2018 - 16 ⭐ - Python
+  2018 - 37 ⭐ - Python
 </h1>
 <a href="solutions/2018/day-01/day-01.py">
   <img src=".aoc_tiles/tiles/2018/01.png" width="161px">
@@ -498,16 +498,16 @@
 <a href="solutions/2018/day-08/day-08.py">
   <img src=".aoc_tiles/tiles/2018/08.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-09/day-09.py">
   <img src=".aoc_tiles/tiles/2018/09.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-10/day-10.py">
   <img src=".aoc_tiles/tiles/2018/10.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-11/day-11.py">
   <img src=".aoc_tiles/tiles/2018/11.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-12/day-12.py">
   <img src=".aoc_tiles/tiles/2018/12.png" width="161px">
 </a>
 <a href="None">
@@ -519,13 +519,13 @@
 <a href="None">
   <img src=".aoc_tiles/tiles/2018/15.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-16/day-16.py">
   <img src=".aoc_tiles/tiles/2018/16.png" width="161px">
 </a>
 <a href="None">
   <img src=".aoc_tiles/tiles/2018/17.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-18/day-18.py">
   <img src=".aoc_tiles/tiles/2018/18.png" width="161px">
 </a>
 <a href="None">
@@ -537,16 +537,16 @@
 <a href="None">
   <img src=".aoc_tiles/tiles/2018/21.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-22/day-22.py">
   <img src=".aoc_tiles/tiles/2018/22.png" width="161px">
 </a>
 <a href="None">
   <img src=".aoc_tiles/tiles/2018/23.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-24/day-24.py">
   <img src=".aoc_tiles/tiles/2018/24.png" width="161px">
 </a>
-<a href="None">
+<a href="solutions/2018/day-25/day-25.py">
   <img src=".aoc_tiles/tiles/2018/25.png" width="161px">
 </a>
 <h1 align="center">

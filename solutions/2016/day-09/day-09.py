@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2016/day-09/input.txt'
 
 class CompressedFile:
     def __init__(self, compressed_file):

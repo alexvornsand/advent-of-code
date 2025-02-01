@@ -3,7 +3,7 @@
 
 from hashlib import md5 as md5
 
-file = 'input.txt'
+file = 'solutions/2015/day-04/input.txt'
 
 class Key:
     def __init__(self, key):

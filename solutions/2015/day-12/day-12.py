@@ -4,7 +4,7 @@
 # part 1
 import json
 
-input = open('day-12.txt', 'r').read()
+input = open('solutions/2015/day-12/input.txt', 'r').read()
 
 def sumNumbers(input, partTwo = False):
     def getNumbersFromObj(obj):

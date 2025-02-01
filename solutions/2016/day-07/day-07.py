@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2016/day-07/input.txt'
 
 class TLSAssessor:
     def __init__(self, ips):

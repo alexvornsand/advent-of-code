@@ -2,7 +2,7 @@
 # day 23
 
 # part 1
-input = open('day-23.txt', 'r').read()
+input = open('solutions/2015/day-23/input.txt', 'r').read()
 
 def runProgram(input, partTwo = False):
     lines = input.split('\n')

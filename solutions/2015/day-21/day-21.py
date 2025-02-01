@@ -2,7 +2,7 @@
 # day 21
 
 # part 1
-input = open('day-21.txt', 'r').read()
+input = open('solutions/2015/day-21/input.txt', 'r').read()
 
 def chooseLoadout(input, partTwo = False):
     weapons = {

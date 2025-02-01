@@ -1,7 +1,7 @@
 # advent of code 2015
 # day 2
 
-file = 'input.txt'
+file = 'solutions/2015/day-02/input.txt'
 
 class Present:
     def __init__(self, input):

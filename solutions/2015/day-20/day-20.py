@@ -5,7 +5,7 @@
 from math import sqrt
 from functools import reduce
 
-input = open('day-20.txt', 'r').read()
+input = open('solutions/2015/day-20/input.txt', 'r').read()
 
 def findHouse(input, partTwo = False):
     def factorNumber(n):

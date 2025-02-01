@@ -3,7 +3,7 @@
 
 import itertools
 
-file = 'input.txt'
+file = 'solutions/2015/day-01/input.txt'
 
 class Directions:
     def __init__(self, input):

@@ -2,7 +2,7 @@
 # day 22
 
 # part 1
-rules = [int(stat.split(': ')[1]) for stat in open('input.txt', 'r').read()[:-1].split('\n')]
+rules = [int(stat.split(': ')[1]) for stat in open('solutions/2015/day-22/input.txt', 'r').read().splitlines()]
 
 def winBattle(rules, partTwo=False):
     hp, damage = rules

@@ -1,7 +1,7 @@
 # advent of code 2017
-# day 1
+# day 01
 
-file = 'input.txt'
+file = 'solutions/2017/day-01/input.txt'
 
 class Captcha:
     def __init__(self, digits):

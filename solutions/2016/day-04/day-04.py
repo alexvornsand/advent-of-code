@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2016/day-04/input.txt'
 
 class Room:
     def __init__(self, room_code):

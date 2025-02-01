@@ -2,7 +2,7 @@
 # day 10
 
 # part 1
-input = open('day-10.txt', 'r').read()
+input = open('solutions/2015/day-10/input.txt', 'r').read()
 
 def playIterativeGame(input, partTwo = False):
     string = input

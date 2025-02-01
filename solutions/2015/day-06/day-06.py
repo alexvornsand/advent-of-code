@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2015/day-06/input.txt'
 
 class LightGrid:
     def __init__(self):

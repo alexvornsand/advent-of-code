@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2015/day-05/input.txt'
 
 class String:
     def __init__(self, string):

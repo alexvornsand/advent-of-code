@@ -3,6 +3,8 @@
 
 from collections import defaultdict
 
+file = 'solutions/2016/day-13/input.txt'
+
 class SecretMap:
     def __init__(self, value, destination):
         self.value = value
@@ -45,7 +47,8 @@ def part_2(secretMap):
     print('Part 2:', secretMap.countRange())
 
 def main():
-    secretMap = SecretMap(1350, (31, 39))
+    number = int(open(file, 'r').read())
+    secretMap = SecretMap(number, (31, 39))
     part_1(secretMap)
     part_2(secretMap)
 

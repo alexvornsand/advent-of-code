@@ -2,7 +2,7 @@
 # day 18
 
 # part 1
-input = open('day-18.txt', 'r').read()
+input = open('solutions/2015/day-18/input.txt', 'r').read()
 
 def flickerLights(input, partTwo = False):
     def queryLight(r, c):

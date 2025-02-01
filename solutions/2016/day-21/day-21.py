@@ -3,7 +3,7 @@
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2016/day-21/input.txt'
 
 class Scramble:
     def __init__(self, password, instructions):

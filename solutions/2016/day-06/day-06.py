@@ -1,7 +1,7 @@
 # advent of code 2016
 # day 6
 
-file = 'input.txt'
+file = 'solutions/2016/day-06/input.txt'
 
 class Transmission:
     def __init__(self, messages):

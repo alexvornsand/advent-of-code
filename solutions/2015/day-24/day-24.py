@@ -6,7 +6,7 @@ import operator
 import itertools
 import functools
 
-input = open('day-24.txt', 'r').read()
+input = open('solutions/2015/day-24/input.txt', 'r').read()
 
 def arrangePackages(input, partTwo = False):
     nums = [int(x) for x in input.split('\n')]

@@ -1,7 +1,7 @@
 # advent of code 2018
-# day 1
+# day 01
 
-file = 'input.txt'
+file = 'solutions/2018/day-01/input.txt'
 
 class Calibrator:
     def __init__(self, frequencies):

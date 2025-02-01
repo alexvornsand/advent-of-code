@@ -4,7 +4,7 @@
 # part 1
 import itertools
 
-input = open('day-17.txt', 'r').read()
+input = open('solutions/2015/day-17/input.txt', 'r').read()
 
 def combineJugs(input, partTwo = False):
     jugs = [int(x) for x in input.split('\n')]

@@ -1,7 +1,7 @@
 # advent of code 2018
 # day 06
 
-file = 'input.txt'
+file = 'solutions/2018/day-06/input.txt'
 
 class CoordinateMap:
     def __init__(self, points):

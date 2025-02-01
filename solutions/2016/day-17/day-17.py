@@ -3,6 +3,8 @@
 
 from hashlib import md5
 
+file = 'solutions/2016/day-17/input.txt'
+
 class Vaults:
     def __init__(self, password):
         self.password = password
@@ -50,7 +52,8 @@ def part_2(vaults):
     print('Part 2:', vaults.findMaxPath((0, 0), ''))
 
 def main():
-    vaults = Vaults('qzthpkfp')
+    hash = open(file, 'r').read() 
+    vaults = Vaults(hash)
     part_1(vaults)
     part_2(vaults)
 

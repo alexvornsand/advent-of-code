@@ -1,6 +1,8 @@
 # advent of code 2016
 # day 16
 
+file = 'solutions/2016/day-16/input.txt'
+
 class Checksum:
     def __init__(self, base, length):
         self.base = base
@@ -28,7 +30,7 @@ def part_2(number):
     print('Part 2:', Checksum(number, 35651584).buildString().checkSum())
 
 def main():
-    number = '11100010111110100'
+    number = open(file, 'r').read()
     part_1(number)
     part_2(number)
 

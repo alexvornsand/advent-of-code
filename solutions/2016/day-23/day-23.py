@@ -1,7 +1,7 @@
 # advent of code 2016
 # day 23
 
-file = 'Input.txt'
+file = 'solutions/2016/day-23/input.txt'
 
 class AssemBunny:
     def __init__(self, instructions):

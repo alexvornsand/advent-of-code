@@ -3,7 +3,7 @@
 
 import numpy as np
 
-file = 'input.txt'
+file = 'solutions/2016/day-08/input.txt'
 
 class Display:
     def __init__(self, instructions):

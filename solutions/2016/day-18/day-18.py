@@ -1,14 +1,16 @@
 # advent of code 2016
 # day 18
 
-file = 'input.txt'
+file = 'solutions/2016/day-18/input.txt'
 
 class TrapFloor:
     def __init__(self, row_zero):
+        self.row_zero = row_zero
         self.image = [row_zero]
         self.width = len(row_zero)
 
-    def fillFloor(self, n=40):
+    def fillFloor(self, n):
+        self.image = [self.row_zero]
         prior_line = [x for x in self.image[0]]
         y = 1
         while y < n:

@@ -1,15 +1,15 @@
 # advent of code 2018
-# day 3
+# day 03
 
 import re
 
-file = 'input.txt'
+file = 'solutions/2018/day-03/input.txt'
 
 class Bolt:
     def __init__(self, cuts):
         self.cuts = {}
         for cut in cuts:
-            id, x, y, width, length = re.search('#(\d+)\s@\s(\d+),(\d+):\s(\d+)x(\d+)', cut).groups()
+            id, x, y, width, length = re.search(r"#(\d+)\s@\s(\d+),(\d+):\s(\d+)x(\d+)", cut).groups()
             self.cuts[id] = {'x': int(x), 'y': int(y), 'width': int(width), 'length': int(length)}
         self.fabric_in_use = {}
 
