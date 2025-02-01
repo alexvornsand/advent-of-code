@@ -3,7 +3,7 @@
 
 import itertools
 
-file = 'input.txt'
+file = 'solutions/2019/day-07/input.txt'
 
 class Intcode:
     def __init__(self, code): 

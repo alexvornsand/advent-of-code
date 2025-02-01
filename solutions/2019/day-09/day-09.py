@@ -1,7 +1,7 @@
 # advent of code 2019
-# day 9
+# day 09
 
-file = 'input.txt'
+file = 'solutions/2019/day-09/input.txt'
 
 class Intcode:
     def __init__(self, code): 

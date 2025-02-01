@@ -1,8 +1,8 @@
 # advent of code 2019
-# day 3
+# day 03
 
 # part 1
-wires = [wire.split(',') for wire in open('input.txt', 'r').read().split('\n')[:-1]]
+wires = [wire.split(',') for wire in open('solutions/2019/day-03/input.txt', 'r').read().split('\n')[:-1]]
 
 def findIntersection(wires, partTwo=False):
     def mapPath(wire):
@@ -30,7 +30,7 @@ def findIntersection(wires, partTwo=False):
     else:
         return(min([wire0Path[c] + wire1Path[c] for c in overlaps[1:]]))
 
-findIntersection(wires)
+print(findIntersection(wires))
 
 # part 2
-findIntersection(wires, True)
+print(findIntersection(wires, True))

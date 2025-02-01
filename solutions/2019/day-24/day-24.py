@@ -1,7 +1,7 @@
 # advent of code 2019
 # day 24
 
-file = 'input.txt'
+file = 'solutions/2019/day-24/input.txt'
 
 class BugMap:
     def __init__(self, map):

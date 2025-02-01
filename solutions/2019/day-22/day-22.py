@@ -1,7 +1,7 @@
 # advent of code 2019
 # day 22
 
-file = 'input.txt'
+file = 'solutions/2019/day-22/input.txt'
 
 class Deck:
     def __init__(self, N=10007):

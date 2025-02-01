@@ -1,7 +1,7 @@
 # advent of code 2019
 # day 11
 
-file = 'input.txt'
+file = 'solutions/2019/day-11/input.txt'
 
 class Intcode:
     def __init__(self, code): 
@@ -259,9 +259,9 @@ class Hull:
         minX = min([key[0] for key in self.hullMap])
         maxY = max([key[1] for key in self.hullMap])
         minY = min([key[1] for key in self.hullMap])
-        grid = [['.' for x in range(minX, maxX + 1)] for y in range(minY, maxY + 1)]
+        grid = [[' ' for _ in range(minX, maxX + 1)] for y in range(minY, maxY + 1)]
         for key in self.hullMap:
-            grid[key[1] - minY][key[0] - minX] = '.' if self.hullMap[key] == 0 else '#'
+            grid[key[1] - minY][key[0] - minX] = ' ' if self.hullMap[key] == 0 else '#'
         return '\n'.join(' '.join(row) for row in grid)
     
     def adjustPosition(self, instruction):

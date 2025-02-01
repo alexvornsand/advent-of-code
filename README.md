@@ -318,46 +318,46 @@
 <h1 align="center">
   2020 - 50 ⭐ - 
 </h1>
-<a href="solutions/2020/day-01/day-01.r">
+<a href="solutions/2020/day-01/day-01.py">
   <img src=".aoc_tiles/tiles/2020/01.png" width="161px">
 </a>
-<a href="solutions/2020/day-02/day-02.r">
+<a href="solutions/2020/day-02/day-02.py">
   <img src=".aoc_tiles/tiles/2020/02.png" width="161px">
 </a>
-<a href="solutions/2020/day-03/day-03.r">
+<a href="solutions/2020/day-03/day-03.py">
   <img src=".aoc_tiles/tiles/2020/03.png" width="161px">
 </a>
-<a href="solutions/2020/day-04/day-04.r">
+<a href="solutions/2020/day-04/day-04.py">
   <img src=".aoc_tiles/tiles/2020/04.png" width="161px">
 </a>
-<a href="solutions/2020/day-05/day-05.r">
+<a href="solutions/2020/day-05/day-05.py">
   <img src=".aoc_tiles/tiles/2020/05.png" width="161px">
 </a>
-<a href="solutions/2020/day-06/day-06.r">
+<a href="solutions/2020/day-06/day-06.py">
   <img src=".aoc_tiles/tiles/2020/06.png" width="161px">
 </a>
-<a href="solutions/2020/day-07/day-07.r">
+<a href="solutions/2020/day-07/day-07.py">
   <img src=".aoc_tiles/tiles/2020/07.png" width="161px">
 </a>
-<a href="solutions/2020/day-08/day-08.r">
+<a href="solutions/2020/day-08/day-08.py">
   <img src=".aoc_tiles/tiles/2020/08.png" width="161px">
 </a>
-<a href="solutions/2020/day-09/day-09.r">
+<a href="solutions/2020/day-09/day-09.py">
   <img src=".aoc_tiles/tiles/2020/09.png" width="161px">
 </a>
-<a href="solutions/2020/day-10/day-10.r">
+<a href="solutions/2020/day-10/day-10.py">
   <img src=".aoc_tiles/tiles/2020/10.png" width="161px">
 </a>
-<a href="solutions/2020/day-11/day-11.r">
+<a href="solutions/2020/day-11/day-11.py">
   <img src=".aoc_tiles/tiles/2020/11.png" width="161px">
 </a>
-<a href="solutions/2020/day-12/day-12.r">
+<a href="solutions/2020/day-12/day-12.py">
   <img src=".aoc_tiles/tiles/2020/12.png" width="161px">
 </a>
-<a href="solutions/2020/day-13/day-13.r">
+<a href="solutions/2020/day-13/day-13.py">
   <img src=".aoc_tiles/tiles/2020/13.png" width="161px">
 </a>
-<a href="solutions/2020/day-14/day-14.r">
+<a href="solutions/2020/day-14/day-14.py">
   <img src=".aoc_tiles/tiles/2020/14.png" width="161px">
 </a>
 <a href="solutions/2020/day-15/day-15.py">
@@ -456,7 +456,7 @@
 <a href="solutions/2019/day-20/day-20.py">
   <img src=".aoc_tiles/tiles/2019/20.png" width="161px">
 </a>
-<a href="solutions/2019/day-21/day-19.py">
+<a href="solutions/2019/day-21/day-21.py">
   <img src=".aoc_tiles/tiles/2019/21.png" width="161px">
 </a>
 <a href="solutions/2019/day-22/day-22.py">

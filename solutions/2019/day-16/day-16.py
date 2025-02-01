@@ -6,7 +6,7 @@ from math import comb
 import numpy as np
 from itertools import cycle, islice
 
-signal = open('input.txt', 'r').read()[:-1]
+signal = open('solutions/2019/day-16/input.txt', 'r').read()[:-1]
 
 def decodeSignal(signal, partTwo=False):
     if partTwo is False:
@@ -30,7 +30,7 @@ def decodeSignal(signal, partTwo=False):
             answer += str(digit % 10)
         return(int(answer))
 
-decodeSignal(signal)
+print(decodeSignal(signal))
 
 # part 2
-decodeSignal(signal, True)
+print(decodeSignal(signal, True))

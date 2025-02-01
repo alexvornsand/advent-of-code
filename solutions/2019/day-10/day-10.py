@@ -4,7 +4,7 @@
 # part 1
 import math
 
-map = [[x for x in r] for r in open('input.txt', 'r').read()[:-1].split('\n')]
+map = [[x for x in r] for r in open('solutions/2019/day-10/input.txt', 'r').read()[:-1].split('\n')]
 
 def chooseOptimalAsteroid(map, partTwo=False):
     allAsteroids = {}
@@ -52,7 +52,7 @@ def chooseOptimalAsteroid(map, partTwo=False):
     else:
         return(math.floor(highestVisibility / 10000))
 
-chooseOptimalAsteroid(map)
+print(chooseOptimalAsteroid(map))
 
 # part 2
-chooseOptimalAsteroid(map, True)
+print(chooseOptimalAsteroid(map, True))

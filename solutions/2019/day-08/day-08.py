@@ -1,10 +1,10 @@
 # advent of code 2019
-# day 8
+# day 08
 
 # part 1
 import numpy as np
 
-transmission = open('input.txt', 'r').read()[:-1]
+transmission = open('solutions/2019/day-08/input.txt', 'r').read()[:-1]
 
 def parseImage(transmission, partTwo=False):
     layers = [transmission[i * (25 * 6):i * (25 * 6) + (25 * 6)] for i in range(int(len(transmission) / (25 * 6)))]  
@@ -27,7 +27,7 @@ def parseImage(transmission, partTwo=False):
                 i[y][x] = p
         print('\n'.join([''.join([' ' if d == 0 else '#' for d in l]) for l in i]))
 
-parseImage(transmission)
+print(parseImage(transmission))
 
 # part 2
-parseImage(transmission, True)
+print(parseImage(transmission, True))

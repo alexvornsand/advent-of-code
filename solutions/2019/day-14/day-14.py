@@ -4,7 +4,7 @@
 # part 1
 import math
 
-reactions = open('input.txt', 'r').read()[:-1].split('\n')
+reactions = open('solutions/2019/day-14/input.txt', 'r').read()[:-1].split('\n')
 
 def makeFuel(reactions, partTwo=False):
     reactionsDict = {}
@@ -68,7 +68,7 @@ def makeFuel(reactions, partTwo=False):
             surplus = result[1]
         return(fuel)
 
-makeFuel(reactions)
+print(makeFuel(reactions))
 
 # part 2
-makeFuel(reactions, True)
+print(makeFuel(reactions, True))

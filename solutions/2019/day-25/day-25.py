@@ -2,8 +2,9 @@
 # day 25
 
 from itertools import combinations
+import re
 
-file = 'input.txt'
+file = 'solutions/2019/day-25/input.txt'
 
 class Intcode:
     def __init__(self, code): 
@@ -299,7 +300,7 @@ def part_1(password):
             inpt('take ' + item)
         inpt('south')
         if 'eject' not in ''.join([chr(x) for x in password.output_values]):
-            print('Part 1:', ''.join([chr(x) for x in password.output_values]), sep='\n')
+            print('Part 1:', re.findall(r"\d+", ''.join([chr(x) for x in password.output_values]))[0])
             break
         for item in combination:
             inpt('drop ' + item)

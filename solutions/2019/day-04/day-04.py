@@ -4,7 +4,7 @@
 # part 1
 import re
 
-pwRange = [int(x) for x in '138307-654504'.split('-')]
+pwRange = [int(x) for x in open('solutions/2019/day-04/input.txt', 'r').read().strip().split('-')]
 
 def countPasswords(pwRange, partTwo=False):
     validPws = []
@@ -18,7 +18,7 @@ def countPasswords(pwRange, partTwo=False):
             validPws.append(pw)
     return(len(validPws))    
 
-countPasswords(pwRange)
+print(countPasswords(pwRange))
 
 # part 2
-countPasswords(pwRange, True)
+print(countPasswords(pwRange, True))

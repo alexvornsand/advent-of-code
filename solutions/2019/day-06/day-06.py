@@ -1,8 +1,8 @@
 # advent of code 2019
-# day 6
+# day 06
 
 # part 1
-orbits = open('input.txt', 'r').read().split('\n')[:-1]
+orbits = open('solutions/2019/day-06/input.txt', 'r').read().split('\n')[:-1]
 
 def countOrbits(orbits, partTwo=False):
     def listOrbits(orbits, node, lineage):
@@ -23,7 +23,7 @@ def countOrbits(orbits, partTwo=False):
         onlySanta = len([o for o in santa if o not in me])
         return(onlyMe + onlySanta)
 
-countOrbits(orbits)
+print(countOrbits(orbits))
 
 # part 2
-countOrbits(orbits, True)
+print(countOrbits(orbits, True))

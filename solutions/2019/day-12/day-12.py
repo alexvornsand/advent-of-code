@@ -5,7 +5,7 @@
 import re
 import math
 
-moons = open('input.txt', 'r').read()[:-1].split('\n')
+moons = open('solutions/2019/day-12/input.txt', 'r').read()[:-1].split('\n')
 
 def analyzeOrbits(moons, partTwo=False):
     moonDict = {}
@@ -93,7 +93,7 @@ def analyzeOrbits(moons, partTwo=False):
     else:
         return(math.lcm(xCycleLength, yCycleLength, zCycleLength))
 
-analyzeOrbits(moons)
+print(analyzeOrbits(moons))
 
 # part 2
-analyzeOrbits(moons, True)
+print(analyzeOrbits(moons, True))

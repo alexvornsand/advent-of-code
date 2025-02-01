@@ -1,10 +1,10 @@
 # advent of code 2019
-# day 1
+# day 01
 
 # part 1
 import math
 
-masses = [int(mass) for mass in open('input.txt', 'r').read().split('\n')[:-1]]
+masses = [int(mass) for mass in open('solutions/2019/day-01/input.txt', 'r').read().splitlines()]
 
 def measureFuel(masses, partTwo=False):
     if partTwo is False:
@@ -22,7 +22,7 @@ def measureFuel(masses, partTwo=False):
                     break
         return(fuel)
 
-measureFuel(masses)
+print(measureFuel(masses))
 
 # part 2
-measureFuel(masses, True)
+print(measureFuel(masses, True))

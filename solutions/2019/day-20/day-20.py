@@ -1,7 +1,7 @@
 # advent of code 2019
 # day 20
 
-file = 'input.txt'
+file = 'solutions/2019/day-20/input.txt'
 
 class PlutoMap():
     def __init__(self):
@@ -9,13 +9,13 @@ class PlutoMap():
         self.portals = {}
         self.terminals = {}
 
-    def fillMap(self, input):
-        for r in range(len(input)):
-            for c in range(len(input[r])):
-                self.map[(c, r)] = input[r][c]
+    def fillMap(self, map):
+        for r in range(len(map)):
+            for c in range(len(map[r])):
+                self.map[(c, r)] = map[r][c]
         portals = {}
-        width = len(input[0])
-        length = len(input)
+        width = len(map[0])
+        length = len(map)
         for coord in self.map:
             x, y = coord
             if self.map[coord] not in ['.', '#', ' ']:
@@ -182,19 +182,19 @@ class PlutoMap():
                 current_node = queue[0]
                 queue.remove(current_node)
 
-def part_1(plutoMap):
+def part_1(plutoMap, map):
     plutoMap.fillMap(map)
     print('Part 1:', plutoMap.navigateMaze())
 
-def part_2(plutoMap):
+def part_2(plutoMap, map):
     plutoMap.fillMap(map)
     print('Part 2:', plutoMap.navigateMaze(False))
 
 def main():
     map = [[c for c in r] for r in open(file, 'r').read().splitlines()]
     plutoMap = PlutoMap()
-    part_1(plutoMap)
-    part_2(plutoMap)
+    part_1(plutoMap, map)
+    part_2(plutoMap, map)
 
 if __name__ == '__main__':
     main()
