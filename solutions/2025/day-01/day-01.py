@@ -2,7 +2,6 @@
 # day 1
 
 from pathlib import Path
-from typing import TypeAlias
 import re
 
 class Safe: 
