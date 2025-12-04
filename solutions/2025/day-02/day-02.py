@@ -50,7 +50,7 @@ def read_input(file_path: str | Path = "input.txt") -> list[int]:
 
 def main() -> None:
     id_range_value_pairs = read_input(
-        "./solutions/2025/day-01/input.txt"
+        "./solutions/2025/day-02/input.txt"
     )
     id_ranges = [IDRange(*id_range_value_pair) for id_range_value_pair in id_range_value_pairs]
     part1 = sum([id_range.countTwinIDs() for id_range in id_ranges])
